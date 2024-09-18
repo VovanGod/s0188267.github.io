@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson1</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <a href="./" class="logo">
+                <img src="./img/logo.jpg" alt="logo">
+                butterfly
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./">Главная</a></li>
+                    <li><a href="#links">Гиперссылки</a></li>
+                    <li><a href="#table">Таблица</a></li>
+                    <li><a href="#form">Форма</a></li>
+                    <li><a href="#footer">Подвал</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="links" id="links">
+        <div class="content-wrapper">
+            <h2>Гиперссылки</h2>
+            <ul>
+                <li><a href="http://www.kubsu.ru/">Кубгу (http)</a></li>
+                <li><a href="https://www.kubsu.ru/">КубГУ (https)</a></li>
+                <li id="image-link">
+                    Ссылка-изображение <br>
+                    <a href="https://www.kubsu.ru/">
+                        <img src="./img/university.png" alt="Логотип КубГУ">
+                    </a>
+                </li>
+                <li><a href="./about/about.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                <li><a href="#form">Ссылка на фрагмент текущей страницы (на форму)</a></li>
+                <li><a href="https://example.com?a=1&b=2&c=8">Ссылка с тремя параметрами в URL</a></li>
+                <li><a href="#image-link">Ссылка с параметром id в URL</a></li>
+                <li><a href="./">Относительная на страницу в текущем каталоге</a></li>
+                <li><a href="./about/about.html">Относительная на страницу в каталоге about</a></li>
+                <li><a href="../">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                <li><a href="../../">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                <li>Контекстная в тексте <a href="">абзаца</a></li>
+                <li><a href="https://www.kubsu.ru/ru/node/42552">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                <li>
+                    Ссылка из прямоугольных и круглых областей картинки <br> (картинка центра дерева ведет на эту же страницу, а текст кубгу в about)
+                    <br>
+                    <map name="map-link">
+                        <area shape="rect" coords="27,62,229,161" href="./about/about.html" alt="HTML">
+                        <area shape="circle" coords="27,99,71" href="./" alt="HTML">
+                    </map>
+                    <img src="./img/university.png" usemap="#map-link" alt="Логотип КубГУ">
+                </li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a>Ссылка без href;</a></li>
+                <li><a href="https://dzen.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                <li>Страница about запрещена для индексации поисковиками</li>
+                <li>
+                    Нумерованный список ссылок с подписями title
+                    <ol>
+                        <li><a href="#!" title="Element1">Element1</a></li>
+                        <li><a href="#!" title="Element2">Element2</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="ftp://user:password@example.com/myfile.zip
+                    ">Ссылка на файл на сервере FTP с авторизацией;</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="table-wrapper" id="table">
+        <h2>Таблица</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Возраст</th>
+                    <th>Пол</th>
+                    <th>Город</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Владимир</td>
+                    <td>18</td>
+                    <td>М</td>
+                    <td>Новокузнецк</td>
+                </tr>
+                <tr>
+                    <td>Юля</td>
+                    <td>18</td>
+                    <td>Ж</td>
+                    <td>Белореченск</td>
+                </tr>
+                <tr>
+                    <td>Игорь</td>
+                    <td colspan="2">Объединенная ячейка</td>
+                    <td>Москва</td>
+                </tr>
+                <tr>
+                    <td>Влад</td>
+                    <td>18</td>
+                    <td>М</td>
+                    <td>Краснодар</td>
+                </tr>
+                <tr>
+                    <td>Руслан</td>
+                    <td>19</td>
+                    <td>М</td>
+                    <td>Краснодар</td>
+                </tr>
+                <tr>
+                    <td>Арина</td>
+                    <td>19</td>
+                    <td>Ж</td>
+                    <td>Краснодар</td>
+                </tr>
+                <tr>
+                    <td>Мишаня</td>
+                    <td>19</td>
+                    <td>М</td>
+                    <td>Краснодар</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section class="form" id="form">
+        <div class="form-wrapper">
+            <h2>Форма</h2>
+            <form id="form">
+                <label>
+                    ФИО
+                    <input type="text" name="name" id="name" placeholder="Ваше имя">
+                </label>
+                <br>
+
+                <label>
+                    Телефон
+                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                </label>
+                <br>
+
+                <label>
+                    Электронная почта
+                    <input type="email" name="email" id="email" placeholder="Ваш email">
+                </label>
+                <br>
+
+                <label>
+                    Дата рождения
+                    <input type="date" name="data" id="data">
+                </label>
+                <br>
+
+                <div class="gender-div">
+                    <span>Ваш пол</span>
+                    <div>
+                        <label class="gender" >
+                            <input type="radio" name="gender" value="female" id="gender">
+                            Женский
+                        </label>
+                        <br>
+                        <label class="gender" >
+                            <input type="radio" name="gender" value="male" id="gender">
+                            Мужской
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <label>
+                    Ваш любимый ЯП
+                    <select id="lang" name="lang">
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskell">Haskell</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+
+                <label>
+                    Биография
+                    <textarea name="biogr" id="biogr" placeholder="Расскажите о себе"></textarea>
+                </label>
+                <br>
+
+                <label class="ok">
+                    <input type="checkbox" name="agree" id="agree">
+                    С контрактом ознакомлен
+                </label>
+                <br>
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-info">
+            (В) Владимир Юрков
+        </div>
+    </footer>
+</body>
+</html>
