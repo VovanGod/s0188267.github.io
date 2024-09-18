@@ -18,7 +18,7 @@
                     <li><a href="./">Главная</a></li>
                     <li><a href="#links">Гиперссылки</a></li>
                     <li><a href="#table">Таблица</a></li>
-                    <li><a href="#form">Форма</a></li>
+                    <li><a href="#formDiv">Форма</a></li>
                     <li><a href="#footer">Подвал</a></li>
                 </ul>
             </nav>
@@ -38,7 +38,7 @@
                 </li>
                 <li><a href="./about/about.html">Сокращенная ссылка на внутреннюю страницу</a></li>
                 <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-                <li><a href="#form">Ссылка на фрагмент текущей страницы (на форму)</a></li>
+                <li><a href="#form_id">Ссылка на фрагмент текущей страницы (на форму)</a></li>
                 <li><a href="https://example.com?a=1&b=2&c=8">Ссылка с тремя параметрами в URL</a></li>
                 <li><a href="#image-link">Ссылка с параметром id в URL</a></li>
                 <li><a href="./">Относительная на страницу в текущем каталоге</a></li>
@@ -133,10 +133,10 @@
     </section>
 
 
-    <section class="form" id="form">
+    <section class="form" id="formDiv">
         <div class="form-wrapper">
             <h2>Форма</h2>
-            <form id="form">
+            <form id="form_id">
                 <label>
                     ФИО
                     <input type="text" name="name" id="name" placeholder="Ваше имя">
@@ -165,12 +165,12 @@
                     <span>Ваш пол</span>
                     <div>
                         <label class="gender" >
-                            <input type="radio" name="gender" value="female" id="gender">
+                            <input type="radio" name="gender" value="female" id="genderF">
                             Женский
                         </label>
                         <br>
                         <label class="gender" >
-                            <input type="radio" name="gender" value="male" id="gender">
+                            <input type="radio" name="gender" value="male" id="genderM">
                             Мужской
                         </label>
                     </div>
