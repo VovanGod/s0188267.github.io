@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="py-3">
+        <div class="container">
+            <div class="header-wrapper row d-flex align-items-center">
+                <a href="./" class="logo d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4">
+                    <img src="./img/logo.jpg" alt="logo">
+                    butterfly
+                </a>
+                <nav class="mt-3 col-12 col-sm-12 col-md-8">
+                    <ul class="d-flex flex-column flex-sm-column flex-md-row align-items-center justify-content-center flex-wrap row-gap-2 column-gap-3">
+                        <li><a href="./">Главная</a></li>
+                        <li><a href="#links">Гиперссылки</a></li>
+                        <li><a href="#table">Таблица</a></li>
+                        <li><a href="#formDiv">Форма</a></li>
+                        <li><a href="#footer">Подвал</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainWrap d-flex flex-column">
+        <section class="links py-5" id="links">
+            <div class="content-wrapper">
+                <h2 class="pb-2 mb-5">Гиперссылки</h2>
+                <ul class="d-flex flex-column row-gap-3">
+                    <li><a href="http://www.kubsu.ru/">Кубгу (http)</a></li>
+                    <li><a href="https://www.kubsu.ru/">КубГУ (https)</a></li>
+                    <li id="image-link">
+                        Ссылка-изображение <br>
+                        <a href="https://www.kubsu.ru/">
+                            <img src="./img/university.png" alt="Логотип КубГУ">
+                        </a>
+                    </li>
+                    <li><a href="./about/about.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                    <li><a href="#form_id">Ссылка на фрагмент текущей страницы (на форму)</a></li>
+                    <li><a href="https://example.com?a=1&b=2&c=8">Ссылка с тремя параметрами в URL</a></li>
+                    <li><a href="#image-link">Ссылка с параметром id в URL</a></li>
+                    <li><a href="./">Относительная на страницу в текущем каталоге</a></li>
+                    <li><a href="./about/about.html">Относительная на страницу в каталоге about</a></li>
+                    <li><a href="../">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../../">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                    <li>Контекстная в тексте <a href="">абзаца</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/node/42552">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li>
+                        Ссылка из прямоугольных и круглых областей картинки <br> (картинка центра дерева ведет на эту же страницу, а текст кубгу в about)
+                        <br>
+                        <map name="map-link">
+                            <area shape="rect" coords="27,62,229,161" href="./about/about.html" alt="HTML">
+                            <area shape="circle" coords="27,99,71" href="./" alt="HTML">
+                        </map>
+                        <img src="./img/university.png" usemap="#map-link" alt="Логотип КубГУ">
+                    </li>
+                    <li><a href="">Ссылка с пустым href</a></li>
+                    <li><a>Ссылка без href;</a></li>
+                    <li><a href="https://dzen.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                    <li>Страница about запрещена для индексации поисковиками</li>
+                    <li>
+                        Нумерованный список ссылок с подписями title
+                        <ol>
+                            <li><a href="#!" title="Element1">Element1</a></li>
+                            <li><a href="#!" title="Element2">Element2</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="ftp://user:password@example.com/myfile.zip
+                        ">Ссылка на файл на сервере FTP с авторизацией;</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="table-wrapper py-5" id="table">
+            <h2 class="pb-2 mb-5">Таблица</h2>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="column">Имя</th>
+                            <th scope="column">Возраст</th>
+                            <th scope="column">Пол</th>
+                            <th scope="column">Город</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row">
+                            <td>Владимир</td>
+                            <td>18</td>
+                            <td>М</td>
+                            <td>Новокузнецк</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>Юля</td>
+                            <td>18</td>
+                            <td>Ж</td>
+                            <td>Белореченск</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>Игорь</td>
+                            <td colspan="2">Объединенная ячейка</td>
+                            <td>Москва</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>Влад</td>
+                            <td>18</td>
+                            <td>М</td>
+                            <td>Краснодар</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>Руслан</td>
+                            <td>19</td>
+                            <td>М</td>
+                            <td>Краснодар</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>Арина</td>
+                            <td>19</td>
+                            <td>Ж</td>
+                            <td>Краснодар</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>Мишаня</td>
+                            <td>19</td>
+                            <td>М</td>
+                            <td>Краснодар</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="form my-5" id="formDiv">
+        <div class="container">
+            <div class="form-wrapper py-4">
+                <h2 class="pb-2 mb-5">Форма</h2>
+                <form id="form_id">
+                    <label class="mx-auto d-flex justify-content-between align-items-center">
+                        ФИО
+                        <input class="p-2" type="text" name="name" id="name" placeholder="Ваше имя">
+                    </label>
+                    <br>
+    
+                    <label class="mx-auto d-flex justify-content-between align-items-center">
+                        Телефон
+                        <input class="p-2" type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                    </label>
+                    <br>
+    
+                    <label class="mx-auto d-flex justify-content-between align-items-center">
+                        Электронная почта
+                        <input class="p-2" type="email" name="email" id="email" placeholder="Ваш email">
+                    </label>
+                    <br>
+    
+                    <label class="mx-auto d-flex justify-content-between align-items-center">
+                        Дата рождения
+                        <input class="p-2" type="date" name="data" id="data">
+                    </label>
+                    <br>
+    
+                    <div class="gender-div mx-auto d-flex justify-content-between align-items-center">
+                        <span>Ваш пол</span>
+                        <div>
+                            <label class="gender mx-auto d-flex justify-content-between align-items-center" >
+                                <input type="radio" name="gender" value="female" id="genderF">
+                                Женский
+                            </label>
+                            <br>
+                            <label class="gender mx-auto d-flex justify-content-between align-items-center" >
+                                <input type="radio" name="gender" value="male" id="genderM">
+                                Мужской
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+    
+                    <label class="mx-auto d-flex justify-content-between align-items-center">
+                        Ваш любимый ЯП
+                        <select id="lang" name="lang">
+                            <option value="pascal">Pascal</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="haskell">Haskell</option>
+                            <option value="clojure">Clojure</option>
+                            <option value="prolog">Prolog</option>
+                            <option value="scala">Scala</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+    
+                    <label class="mx-auto d-flex justify-content-between align-items-center">
+                        Биография
+                        <textarea name="biogr" id="biogr" placeholder="Расскажите о себе"></textarea>
+                    </label>
+                    <br>
+    
+                    <label class="ok mt-2 mx-auto d-flex justify-content-center align-items-center">
+                        <input class="p-2" type="checkbox" name="agree" id="agree">
+                        С контрактом ознакомлен
+                    </label>
+                    <br>
+                    <button type="submit" class="mt-4 py-2 px-4">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-info p-4">
+                (В) Владимир Юрков
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
