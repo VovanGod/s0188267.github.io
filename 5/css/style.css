@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.calculator {
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+}
+
+.product {
+    margin-top: 30px;
+}
+
+input, select {
+    padding: 14px;
+    width: 80%;
+    margin-top: 15px;
+    border: 1.5px #007bff solid;
+    border-radius: 6px;
+}
+
+.warning {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(40% + 20px);
+    background-color:#d30000;
+
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    border-radius: 24px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: 30px;
+    letter-spacing: 1.6px;
+
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.3s ease-in-out;
+    padding-top: 20px;
+}
+
+.warning-active {
+    top: -40%;
+}
+
+.calculate {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 15px 30px;
+    transition: all 0.15s ease-in;
+}
+
+.calculate:hover {
+    background-color: #0056b3;
+}
+
+.clac-wrap {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+}
+
+.wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(40% + 20px);
+    background-color:#007bff;
+
+    color: #fff;
+    border-radius: 24px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: 30px;
+    letter-spacing: 1.6px;
+
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    
+    transition: all 0.3s ease-in-out;
+    padding-top: 20px;
+}
+
+.wrap-active {
+    bottom: -40%;
+}
+
+.result {
+    font-size: 36px;
+}
