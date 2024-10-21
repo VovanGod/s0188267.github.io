@@ -133,6 +133,7 @@ body {
           transform: translateX(-50%);
   width: 100%;
   padding: 0 25px;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,6 +163,7 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.09s ease-in;
   transition: all 0.09s ease-in;
+  background: #000;
 }
 .slick-dots button:hover {
   background: #fff;
