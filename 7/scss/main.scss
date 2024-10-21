@@ -42,6 +42,13 @@ body {
        } 
     }
 
+    &-6 {
+        filter: blur(120px) saturate(8);
+       img {
+        width: 160px;
+       } 
+    }
+
     &-1 {
        img {
         width: 180px;
@@ -124,6 +131,13 @@ body {
 
     li {
         list-style-type: none;
+    }
+
+    .slick-active {
+        button {
+            background: #fff;
+            color: #000;
+        }
     }
 
     button {

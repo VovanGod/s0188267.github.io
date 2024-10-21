@@ -49,6 +49,13 @@ body {
 .slide-bl-2 img {
   width: 160px;
 }
+.slide-bl-6 {
+  -webkit-filter: blur(120px) saturate(8);
+          filter: blur(120px) saturate(8);
+}
+.slide-bl-6 img {
+  width: 160px;
+}
 .slide-bl-1 img {
   width: 180px;
 }
@@ -141,6 +148,10 @@ body {
 }
 .slick-dots li {
   list-style-type: none;
+}
+.slick-dots .slick-active button {
+  background: #fff;
+  color: #000;
 }
 .slick-dots button {
   width: 50px;
