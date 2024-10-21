@@ -149,6 +149,7 @@ body {
 }
 .slick-dots li {
   list-style-type: none;
+  border-radius: 50%;
 }
 .slick-dots .slick-active button {
   background: #fff;
